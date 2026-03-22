@@ -21,3 +21,10 @@ print("By MaheshChauhan • DroneBots")
 
 if __name__ == "__main__":
     bot.run_until_disconnected()
+from health_check import keep_alive
+
+# ... existing code ...
+
+if __name__ == "__main__":
+    keep_alive()  # Starts the web server in a background thread
+    bot.run()     # Starts your Telegram bot
